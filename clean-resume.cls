@@ -22,12 +22,13 @@
 \RequirePackage[absolute, overlay]{textpos}
 \RequirePackage[math-style=TeX, vargreek-shape=unicode]{unicode-math}
 \RequirePackage[left=4.6cm, top=2cm, right=1.5cm, bottom=2.25cm, nohead, nofoot]{geometry}
+\usepackage{enumitem}
 
 %%
 %% Colors and Fonts
 
 \definecolor{white}{HTML}{FFFFFF}
-\definecolor{gray}{HTML}{4D4D4D}
+\definecolor{gray}{HTML}{444444}
 \definecolor{lightgray}{HTML}{888888}
 \definecolor{header}{HTML}{204A87}
 
@@ -42,7 +43,7 @@
   Path=open-sans/,
   BoldFont={OpenSans-Bold.ttf},
   ItalicFont={OpenSans-LightItalic.ttf},
-]{OpenSans-Light.ttf}
+]{OpenSans-Regular.ttf}
 
 %%
 %% Page Setup
@@ -90,6 +91,10 @@
 
 \newcommand{\tech}[1]{
   \hfill {\footnotesize\addfontfeature{Color=lightgray} #1} \\
+}
+
+\newcommand{\separator}[0]{
+  {\large \bullet} \hspace{.5mm}
 }
 
 %%
