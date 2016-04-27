@@ -1,6 +1,6 @@
 # Resume
 
-This is my resume in LaTeX. Feel free to modify the .tex file to create your own resume. XeLaTeX and fontspec are required.
+This is my resume in LaTeX, based off the work of [Eric Fritz](https://github.com/efritz). Feel free to modify the .tex file to create your own resume. XeLaTeX and fontspec are required.
 
 ## License
 
