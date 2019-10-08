@@ -20,7 +20,7 @@
 \RequirePackage[none]{hyphenat}
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[absolute, overlay]{textpos}
-\RequirePackage[math-style=TeX, vargreek-shape=unicode]{unicode-math}
+%%\RequirePackage[math-style=TeX, vargreek-shape=unicode]{unicode-math}
 \RequirePackage[left=4.6cm, top=2cm, right=1.5cm, bottom=2.25cm, nohead, nofoot]{geometry}
 \usepackage{enumitem}
 
@@ -80,10 +80,12 @@
   \end{minipage}
 }
 
-\newcommand{\entry}[4]{
-  \textbf{#1}\pushmargin{#3}
-  \hfill {\footnotesize #2} \\
-  {\small #4}
+\newcommand{\entry}[5]{
+  \textbf{#1}
+  \textit{\small #2}
+  \pushmargin{#4}
+  \hfill {\footnotesize #3} \\
+  {\small #5}
   \vspace{\parsep}
 }
 
